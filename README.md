@@ -1,5 +1,4 @@
 ## Modern JavaScript 
----
 
 1. ES6 arrow function.
 2. Truthy / Falsy Values.
@@ -19,3 +18,6 @@
 16. Rest Operator.
 17. Destructuring. 
 18. Module Import / Exports. 
+19. Template Literals
+20. Set & WeakSet.
+21. copyWithin() Array method

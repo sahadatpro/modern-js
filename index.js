@@ -171,7 +171,28 @@ let b = 20;
 console.log('a', a);
 console.log('b', b);
 
-import { pi, n} from "./external.js";
+import { pi, n } from "./external.js";
 
 console.log('name ', n);
 console.log('PI ', pi);
+
+
+/**
+ * Set and WeakSet
+ */
+
+let myArr = [1, 2, 3, 4, 5, 6, 4, 3, 3, 2, 2, 2];
+let uniqArr = [...new Set(myArr)]
+
+// console.log('myArr ', myArr);
+// console.log('Uniq Array ', uniqArr);
+
+let ax = new Set([1, 2, 3, 4, 5, 6]);
+let bx = new Set([1, 7, 3, 4, 5, 6]);
+
+let union = new Set([...ax, ...bx]);
+let intersection = new Set([...ax].filter(x => bx.has(x)))
+let difference = new Set([...ax].filter(x => !bx.has(x)))
+console.log('Union ', union);
+console.log('Intersection  ', intersection);
+console.log('difference  ', difference);
